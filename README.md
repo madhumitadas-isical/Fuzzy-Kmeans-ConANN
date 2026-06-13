@@ -1,12 +1,8 @@
 # Fuzzy_Kmeans_ConANN
 ## Implementation of ConANN with fuzzy Kmeans clustering
 ## Author:
-  1. Suman Polley
-  2. Madhumita Das
-  3. Raj Lohar
-  4. Bhagavath Chukka
-  5. Tanish Kothari
-
+  1. Madhumita Das
+  2. Suman Polley
 
 ## Downloading and extracting Data
 **SIFT1M** dataset
@@ -48,6 +44,7 @@ and  1$\times$ query dataset size for **GIST**
 ####  IVF ANN
 standard
 ```c
+  mkdir bin
   gcc -O3 -march=native -ffast-math -fopenmp obj/k_means.o obj/IVF_ANN.o experiments/ivf_ann_sift_1m.c -Ilib -o bin/ivf_ann_sift -lm
   gcc -O3 -march=native -ffast-math -fopenmp obj/k_means.o obj/IVF_ANN.o experiments/ivf_ann_gist_1m.c -Ilib -o bin/ivf_ann_gist -lm
 ```
